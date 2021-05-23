@@ -1,4 +1,7 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 'On');//Usar apenas durante desenvolvimento
+
 session_start();
 
 $DB_SERVER = "localhost";
@@ -16,3 +19,4 @@ if ($connect->connect_error) {
     return $success;
     $connect->close();
 }
+?>
