@@ -1,6 +1,6 @@
 $(document).ready(function (){
     $("#aCriarConta").click(function (){
-       $("#formLogin").attr("hidden", "hidden");
-       $("#formCadastro").removeAttr("hidden");
+       $("#formLogin").fadeOut();
+       $("#formCadastro").fadeIn(3000).removeAttr("hidden");
     });
 });
