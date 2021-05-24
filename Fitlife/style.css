@@ -1,0 +1,16 @@
+html {
+  font-size: 10px;
+}
+
+.card {
+  width: 18rem;
+  background-color: #1E90FF;
+  padding: 2.5rem;
+  color: #fff;
+  border-radius: .8rem;
+}
+
+.card_name {
+  font-size: 3rem;
+}
+/*# sourceMappingURL=style.css.map */
