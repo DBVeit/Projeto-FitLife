@@ -6,37 +6,37 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
     </head>
-    <body>
+    <body style="background-image: url('img/wpp.jpg');">
         <nav class="navbar navbar-light bg-light">
             <span class="navbar-brand mb-0 h1" style="float: none; margin-left: 50%;">Fit <a style="vertical-align: middle;">.</a> Life</span>
         </nav>
         <br>
         <div class="container">
-            <div style="padding: 10px; height: 500px; background-color: #e3e3e3;">
+            <div style="padding: 10px; height: 500px; background-color: #e3e3e3; border-radius: 2px; opacity: 0.9;">
                 <div style="float: left; margin-top: 50px; margin-left: 20px; font-size: 25px; width: 50%; height: 100%;">
                     Descubra um novo meio de vida saudável,<br>
                     direto de sua casa
-                </div>
+                </div><!--Texto-->
 
-                <div style="float: left; height: 100%; margin-left: 1%; border-right-style: solid;"></div>
+                <div style="float: left; height: 100%; margin-left: 1%; border-right-style: solid;"></div><!--Divisao-->
 
-                <div style="float: right; width: 30%; margin-right: 10%; margin-top: 50px;">
+                <div id="divFormulario" style="float: right; width: 30%; margin-right: 10%; margin-top: 50px;"><!--Formulario-->
 
-                    <div id="formLogin" align="center" style="background-color: cadetblue; height: 280px; margin-top: 10%; display: none;">
-                        <form method="POST" action="php/functions/session/fn_login.php">
+                    <div id="formLogin" align="center" style="background-color: black; border-radius: 2px; height: 280px; margin-top: 10%;">
+                        <form method="POST" action="../../php/functions/session/fn_login.php">
                             <label for="tEmail"><input type="email" id="tEmail" name="email" placeholder="Email" class="form-control"/></label>
                             <br>
                             <label for="pSenha"><input type="password" id="pSenha" name="senha" placeholder="Senha" class="form-control"/></label>
                             <br>
                             <button type="submit" id="bEntrar" name="entrar" class="btn btn-success">Entrar</button>
-                            <br>
-                            <a>Criar conta</a>
-                            <br>
-                            <a>Esqueci minha senha</a>
                         </form>
+                        <br>
+                        <button id="aCriarConta">Criar conta</button>
+                        <br>
+                        <a style="color: white;" id="aRecuperaSenha">Esqueci minha senha</a>
                     </div>
 
-                    <div id="formCadastro" align="center" style="background-color: black; opacity: 0.6; height: 300px; margin-top: 10%;">
+                    <div id="formCadastro" align="center" style="background-color: black; border-radius: 2px; opacity: 0.6; height: 300px; margin-top: 10%; display: none;">
                         <form>
                             <label for="tNome"><input type="text" id="tNome" name="nome_completo" placeholder="Nome Completo" class="form-control"/></label>
                             <br>
@@ -49,10 +49,12 @@
                             <button type="submit" id="bCadatrar" name="cadastrar" class="btn btn-success">Confirmar Cadastro</button>
                         </form>
                     </div>
+
                 </div>
             </div>
         </div>
     </body>
     <script type="text/javascript" src="jquery/jquery.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/functions/fn_changeForm.js"></script>
 </html>
