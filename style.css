@@ -1,0 +1,281 @@
+/*Global */
+html {
+  font-size: 20px;
+}
+
+.blocktext {
+  margin-left: auto;
+  margin-right: auto;
+  width: 30em;
+}
+
+.p1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+.title {
+  background-color: black;
+}
+
+.body {
+  background-image: url("../img/wpp.jpg");
+}
+
+.centerButton {
+  height: 20px;
+  width: 100px;
+  margin: -20px -50px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+}
+
+.card_name {
+  font-size: 3rem;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+.image {
+  height: 300px;
+  border: 5px solid #555;
+  border-radius: 4px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150xp;
+}
+
+.imageHeart {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 300px;
+  height: 300px;
+  border: 5px solid #555;
+  border-radius: 4px;
+}
+
+/*Menu */
+.name, .email, .senha, .reSenha {
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: solid 1px #CCC;
+  border-radius: 2px;
+}
+
+.caixaEsquerdaMenu {
+  float: left;
+  background-color: #F0FFFF;
+  width: 30%;
+  height: 600px;
+}
+
+.caixaMeioMenu {
+  float: left;
+  background-color: #F0FFFF;
+  width: 40%;
+  height: 600px;
+}
+
+.caixaDireitaMenu {
+  float: right;
+  background-color: #F0FFFF;
+  width: 30%;
+  height: 600px;
+}
+
+.buttonGreenMenu {
+  width: 100px;
+  height: 40px;
+  margin: -20px -50px;
+  position: relative;
+  top: 60%;
+  left: 50%;
+  background-color: #088A68;
+  color: white;
+  border: solid 1px;
+  border-radius: 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.buttonGreenLeftM {
+  width: 100px;
+  height: 40px;
+  margin: -20px -10px;
+  position: relative;
+  top: 60%;
+  left: 10%;
+  background-color: #088A68;
+  color: white;
+  border: solid 1px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.buttonGreenCenterM {
+  width: 100px;
+  height: 40px;
+  margin: -20px -20px;
+  position: relative;
+  top: 60%;
+  left: 25%;
+  background-color: #088A68;
+  color: white;
+  border: solid 1px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.buttonGreenRightM {
+  width: 100px;
+  height: 40px;
+  margin: -20px -30px;
+  position: relative;
+  top: 60%;
+  left: 45%;
+  background-color: #83a39a;
+  color: white;
+  border: solid 1px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/*Loja */
+.buttonVoltarLoja {
+  width: 100px;
+  height: 40px;
+  margin: -20px -50px;
+  position: relative;
+  top: 10%;
+  left: 50%;
+  background-color: #088A68;
+  color: white;
+  border: solid 1px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.buttonGreenLoja {
+  width: 100px;
+  height: 40px;
+  margin: -20px -50px;
+  position: relative;
+  top: 10%;
+  left: 50%;
+  background-color: yellowgreen;
+  color: white;
+  border: solid 1px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+.caixaEsquerdaLoja {
+  float: left;
+  background-color: #F0FFFF;
+  width: 30%;
+  height: 600px;
+}
+
+.caixaMeioLoja {
+  float: left;
+  background-color: #F0FFFF;
+  width: 40%;
+  height: 600px;
+}
+
+.caixaDireitaLoja {
+  float: right;
+  background-color: #F0FFFF;
+  width: 30%;
+  height: 600px;
+}
+
+/*Dieta */
+.dieta {
+  background-color: white;
+  width: auto;
+  border: 15px solid lightgrey;
+  padding: 50px;
+  margin: 20px;
+}
+
+.voltarDietaA {
+  width: 100px;
+  height: 40px;
+  margin: -20px -50px;
+  position: relative;
+  top: 20%;
+  left: 50%;
+  background-color: yellowgreen;
+  color: white;
+  border: solid 1px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+/*Niveis */
+.cardCad {
+  padding-top: 50px;
+  height: 300px;
+  width: 250px;
+  background-color: #1E90FF;
+  padding: 2.5rem;
+  color: #fff;
+  border-radius: .8rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+  margin-bottom: 100px;
+}
+
+/*User */
+.cardUser {
+  padding-top: 50px;
+  height: 300px;
+  width: 250px;
+  background-color: gray;
+  padding: 2.5rem;
+  color: #fff;
+  border-radius: .8rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+  margin-bottom: 100px;
+}
+
+.UnlockedButtonDieta {
+  width: 100px;
+  height: 40px;
+  margin: -20px -50px;
+  position: relative;
+  top: 20%;
+  left: 50%;
+  background-color: yellowgreen;
+  color: white;
+  border: solid 1px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+.LockedButtonDieta {
+  width: 100px;
+  height: 40px;
+  margin: -20px -50px;
+  position: relative;
+  top: 20%;
+  left: 50%;
+  background-color: #83a39a;
+  color: white;
+  border: solid 1px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+/*# sourceMappingURL=style.css.map */
