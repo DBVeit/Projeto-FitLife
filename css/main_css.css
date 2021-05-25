@@ -40,11 +40,11 @@
     padding: 25px;
 }
 
-#aCriarConta, #aRecuperaSenha{
+#aCriarConta, #aRecuperaSenha, #aLogin{
     color: white;
 }
 
-#aCriarConta:hover, #aRecuperaSenha:hover{
+#aCriarConta:hover, #aRecuperaSenha:hover, #aLogin:hover{
     text-decoration-line: underline;
     cursor: pointer;
 }
@@ -53,10 +53,10 @@
 .divCadastro{
     background-color: black;
     border-radius: 5px;
-    height: 350px;
-    margin-top: 5%;
+    height: 360px;
+    margin-top: 4%;
     text-align: center;
-    padding: 35px;
+    padding: 30px;
 }
 
 .textLogin, .textCadastro{

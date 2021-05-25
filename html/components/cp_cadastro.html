@@ -1,5 +1,6 @@
-<div id="formCadastro" align="center" style="background-color: black; opacity: 0.6; height: 300px; margin-top: 10%;">
-    <form method="POST" action="../../php/functions/users/fn_create_user.php">
+<div class="divCadastro" id="formCadastro" hidden="hidden">
+    <p class="textCadastro">Criar conta</p>
+    <form method="POST" action="php/functions/users/fn_create_user.php">
         <label for="tNome"><input type="text" id="tNome" name="nome_completo" placeholder="Nome Completo" class="form-control"/></label>
         <br>
         <label for="tNewEmail"><input type="email" id="tNewEmail" name="newEmail" placeholder="Email" class="form-control"/></label>
@@ -10,4 +11,6 @@
         <br>
         <button type="submit" id="bCadatrar" name="cadastrar" class="btn btn-success">Confirmar Cadastro</button>
     </form>
+    <br>
+    <a id="aLogin">Acessar conta</a>
 </div>

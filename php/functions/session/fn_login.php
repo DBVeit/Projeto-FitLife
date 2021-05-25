@@ -1,29 +1,33 @@
 <?php
 include_once ("../database/conexao.php");
 
-if (empty($_POST['usuario']) || empty($_POST['senha'])){
-    header("Location: ");
+$email = $mysqli->real_escape_string($_POST['email']);
+$senha = $mysqli->real_escape_string($_POST['senha']);
+
+if (empty($email) || empty($senha)){
+    header("Location: ../../../index.php");
     exit();
 }
 
-$usuario = $connect->real_escape_string($_POST['usuario']);
-$senha = $connect->real_escape_string($_POST['senha']);
+$stmt = $mysqli->prepare("SELECT * FROM usuarios WHERE email=? AND senha=?");
+$stmt->bind_param("ss", $email, $senha);
 
-$stmt = $connect->prepare("SELECT * FROM usuarios WHERE usuario=? AND senha=?");
-$stmt->bind_param("ss", $username, $password);
-
-$username = $usuario;
-$password = md5($senha);
+$email = $email;
+$senha = md5($senha);
 $stmt->execute();
 
-$result = mysqli_stmt_bind_result($stmt);
-$user_data = $result->fetch_assoc();
-if ($result == 1){
-    echo $user_data['usuario']." logado";
+$result = $stmt->get_result();
+$row = $result->fetch_assoc();
+$results = mysqli_num_rows($result);
+if ($results == 1){
+    $_SESSION['logado'] = true;
+    $_SESSION['nome'] = $row['nome_completo'];
+    header("Location: ../../../home.php");
 }else{
-    echo "Não foi possivel logar";
+    $_SESSION['nao_autenticado'] = true;
 
 }
 
 $stmt->close();
-$connect->close();
+$mysqli->close();
+?>
