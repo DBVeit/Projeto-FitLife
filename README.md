@@ -9,7 +9,6 @@ A plataforma utiliza linguagens de programação como PHP, JavaScript, além de 
 Para comunicação do front-end com o back-end, é utilizada a biblioteca AJAX, proveniente do jQuery, que permite que elementos sejam carregados a página sem a necessidade de recarregamento e redirecionamento.
 
 ### IDEs utilizadas
-PHP Storm
-VS Code
+PHP Storm e VS Code
 
 ## Atualizações
