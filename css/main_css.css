@@ -1,4 +1,13 @@
 /******Index******/
+.indexBody{
+    background-image: url('../img/wpp.jpg');
+}
+
+.navSpan{
+    float: none;
+    margin-left: 50%;
+}
+
 .mainDiv{
     padding: 10px;
     height: 500px;
@@ -40,13 +49,14 @@
     padding: 25px;
 }
 
-#aCriarConta, #aRecuperaSenha, #aLogin{
+#aCriarConta, #aRecuperaSenha, .aLogin{
     color: white;
 }
 
-#aCriarConta:hover, #aRecuperaSenha:hover, #aLogin:hover{
+#aCriarConta:hover, #aRecuperaSenha:hover, .aLogin:hover{
     text-decoration-line: underline;
     cursor: pointer;
+    color: white;
 }
 
 /*Cadastro*/
@@ -59,7 +69,17 @@
     padding: 30px;
 }
 
-.textLogin, .textCadastro{
+.textLogin, .textCadastro, .textRecuperaSenha{
     color: white;
     font-size: 18px;
+}
+
+/*Recuperar Senha*/
+.divRecuperaSenha{
+    background-color: black;
+    border-radius: 5px;
+    height: 230px;
+    margin-top: 20%;
+    text-align: center;
+    padding: 30px;
 }
