@@ -8,4 +8,7 @@ A temática envolve uma espécie de academia caseira gameficada, onde os usuári
 A plataforma utiliza linguagens de programação como PHP, JavaScript, além de fazer o uso de base dados em MySQL. Utiliza frameworks e bibliotecas de conteúdo visual, como Bootstrap, SASS, jQuery, entre outros.
 Para comunicação do front-end com o back-end, é utilizada a biblioteca AJAX, proveniente do jQuery, que permite que elementos sejam carregados a página sem a necessidade de recarregamento e redirecionamento.
 
+### IDEs utilizadas
+PHP Storm e VS Code
+
 ## Atualizações
