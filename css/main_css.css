@@ -1,5 +1,5 @@
 /******Index******/
-.indexBody{
+.indexBody, .homeBody{
     background-image: url('../img/wpp.jpg');
 }
 
@@ -82,4 +82,15 @@
     margin-top: 20%;
     text-align: center;
     padding: 30px;
+}
+
+#resultadoSubmit{
+    vertical-align: middle;
+    text-align: center;
+    font-size: 15px;
+}
+
+/******Home******/
+.cardDesafio{
+
 }

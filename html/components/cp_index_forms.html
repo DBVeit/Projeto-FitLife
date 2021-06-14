@@ -1,10 +1,10 @@
-<div id="formLogin"><!--Form Login-->
+<div id="divLogin"><!--Form Login-->
     <div class="divLogin">
         <p class="textLogin">Acessar conta</p>
-        <form id="fLogin" method="POST" action="php/functions/session/fn_login.php">
-            <label for="tEmail"><input type="email" id="tEmail" name="email" placeholder="Email" class="form-control"/></label>
+        <form id="formLogin" id="fLogin" method="POST" action="php/functions/session/fn_login.php">
+            <label for="tEmail"><input type="email" id="tEmail" name="email" placeholder="Email" class="form-control" required/></label>
             <br>
-            <label for="pSenha"><input type="password" id="pSenha" name="senha" placeholder="Senha" class="form-control"/></label>
+            <label for="pSenha"><input type="password" id="pSenha" name="senha" placeholder="Senha" class="form-control" required/></label>
             <br>
             <button type="submit" id="bEntrar" name="entrar" class="btn btn-success">Entrar</button>
         </form>
@@ -14,29 +14,29 @@
         <a id="aRecuperaSenha">Esqueci minha senha</a>
     </div>
 </div>
-<div id="formCadastro" hidden><!--Form Cadastro-->
+<div id="divCadastro" hidden><!--Form Cadastro-->
     <div class="divCadastro">
         <p class="textCadastro">Criar conta</p>
-        <form method="POST" action="php/functions/users/fn_create_user.php">
-            <label for="tNome"><input type="text" id="tNome" name="nome_completo" placeholder="Nome Completo" class="form-control"/></label>
+        <form id="formCadastro">
+            <label for="tNome"><input type="text" id="tNome" name="nome_completo" placeholder="Nome Completo" class="form-control" required/></label>
             <br>
-            <label for="tNewEmail"><input type="email" id="tNewEmail" name="newEmail" placeholder="Email" class="form-control"/></label>
+            <label for="tNewEmail"><input type="email" id="tNewEmail" name="newEmail" placeholder="Email" class="form-control" required/></label>
             <br>
-            <label for="tNewSenha"><input type="password" id="tNewSenha" name="newSenha" placeholder="Senha" class="form-control"/></label>
+            <label for="tNewSenha"><input type="password" id="tNewSenha" name="newSenha" placeholder="Senha" class="form-control" minlength="6" required/></label>
             <br>
-            <label for="tConfSenha"><input type="password" id="tConfSenha" name="confSenha" placeholder="Confirmar Senha" class="form-control"/></label>
+            <label for="tConfSenha"><input type="password" id="tConfSenha" name="confSenha" placeholder="Confirmar Senha" class="form-control" minlength="6" required/></label>
             <br>
-            <button type="submit" id="bCadatrar" name="cadastrar" class="btn btn-success">Confirmar Cadastro</button>
+            <button type="submit" id="bCadastrar" name="cadastrar" class="btn btn-success">Confirmar Cadastro</button>
         </form>
         <br>
         <a class="aLogin">Acessar conta</a>
     </div>
 </div>
-<div id="formRecuperarSenha" hidden><!--Form Recuperar Senha-->
+<div id="divRecuperarSenha" hidden><!--Form Recuperar Senha-->
     <div class="divRecuperaSenha">
         <p class="textRecuperaSenha">Recuperar Senha</p>
-        <form id="fSenha" method="POST" action="php/functions/users/fn_forgot_pass.php">
-            <label for="tEmail"><input type="email" id="tEmailPass" name="email" placeholder="Email" class="form-control"/></label>
+        <form id="formRecuperarSenha" id="fSenha" method="POST" action="php/functions/users/fn_forgot_pass.php">
+            <label for="tEmail"><input type="email" id="tEmailPass" name="email" placeholder="Email" class="form-control" required/></label>
             <br>
             <button type="submit" id="bEnviar" name="enviar" class="btn btn-success">Enviar</button>
         </form>
@@ -44,4 +44,7 @@
         <a class="aLogin">Acessar conta</a>
     </div>
 </div>
+<br>
+<div id="resultadoSubmit"></div>
 <script type="text/javascript" src="js/functions/fn_changeForm.js"></script>
+<script type="text/javascript" src="js/ajax/ajax_cadastro.js"></script>

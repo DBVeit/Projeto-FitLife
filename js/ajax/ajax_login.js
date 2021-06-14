@@ -10,6 +10,8 @@ $("document").ready(function (){
            success: function (response){
                if (response.codigo == '1'){
                    window.location.href = "../../home.php";
+               }else{
+                   $("#resultadoSubmit").html('<strong>'+response.msg);
                }
            }
        })

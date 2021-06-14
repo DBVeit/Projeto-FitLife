@@ -9,17 +9,19 @@
         <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
     </head>
     <body class="indexBody">
-    <nav class="navbar navbar-light bg-light">
-        <span class="navbar-brand mb-0 h1 navSpan" id="fitLife"></span><!--Texto Logo Navbar-->
-    </nav>
-    <br>
-    <div class="container">
-        <div class="mainDiv">
-            <div class="textoDiv"></div><!--Texto-->
-            <div class="divisoriaDiv"></div><!--Divisao-->
-            <div class="divFormulario" id="divFormulario"></div><!--Formulario-->
+        <nav class="navbar navbar-light bg-light">
+            <span class="navbar-brand mb-0 h1 navSpan" id="fitLife"></span><!--Texto Logo Navbar-->
+        </nav>
+        <br>
+        <div class="container">
+            <div class="mainDiv">
+                <div class="textoDiv"></div><!--Texto-->
+                <div class="divisoriaDiv"></div><!--Divisao-->
+                <div class="divFormulario" id="divFormulario">
+                    <div id="resultadoSubmit"></div>
+                </div><!--Formulario-->
+            </div>
         </div>
-    </div>
     </body>
     <script type="text/javascript" src="jquery/jquery.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>

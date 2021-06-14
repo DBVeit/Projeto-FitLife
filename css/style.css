@@ -1,21 +1,17 @@
-html {
-  font-size: 10px;
-}
+/* Error: expected more input.
+ *     ,
+ * 249 |   border-radius: 16px
+ *     |                      ^
+ *     '
+ *   style.scss 249:22  root stylesheet */
 
-.card {
-  width: 28rem;
-  background-color: #1E90FF;
-  padding: 2.5rem;
-  color: #fff;
-  border-radius: 0.8rem;
-  align-self: center;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: expected more input.\a     \2577 \a 249 \2502    border-radius: 16px\a     \2502                       ^\a     \2575 \a   style.scss 249:22  root stylesheet";
 }
-.card_name {
-  font-size: 3rem;
-}
-.card_button {
-  background-color: green;
-  padding: 3rem;
-}
-
-/*# sourceMappingURL=style.css.map */
