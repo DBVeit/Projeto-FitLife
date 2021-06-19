@@ -16,6 +16,9 @@
         <br>
         <div class="container" style="margin-top: 50px;">
             <div id="menu"></div>
+            <div id="desafios"></div>
+            <div id="menuLoja"></div>
+            <div id="perfilUsuario"></div>
         </div>
     </body>
     <script type="text/javascript" src="jquery/jquery.js"></script>

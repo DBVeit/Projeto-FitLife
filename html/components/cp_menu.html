@@ -1,12 +1,14 @@
-<div class="body ">
+<div class="body">
     <div class="boxes cards">
-        <table align="center" cellpadding="20">
+        <table class="cardsTable" align="center" cellpadding="20" id="menuOptions">
             <tr>
                 <td>
                     <div class="caixaEsquerdaMenu cardDesafio img_wrap">
                         <h4 class="p1">Desafios</h4>
-                        <a><img src="img/desafio.png" width="280px" height="280px" class="image"/></a>
-                        <p class="description">Acessar desafios diários</p>
+                        <div id="aDesafios" class="image">
+                            <a><img src="img/desafio2.png" width="270px" height="280px"/></a>
+                            <p class="description">Acessar desafios diários</p>
+                        </div>
                         <!--<button class="buttonGreenLeftM">Nivel Easy</button>
                         <button class="buttonGreenCenterM">Nivel Medium</button>
                         <button class="buttonGreenRightM">Nivel Hard</button>-->
@@ -15,20 +17,91 @@
                 <td>
                     <div class="caixaMeioMenu cardLoja img_wrap">
                         <h4 class="p1">Loja</h4>
-                        <a><img src="img/loja.jpeg" width="280px" height="280px" class="image"></a>
-                        <p class="description">Ir para a loja</p>
+                        <div id="aLoja" class="image">
+                            <a><img src="img/loja.jpeg" width="270px" height="280px"></a>
+                            <p class="description">Ir para a loja</p>
+                        </div>
                         <!--<button class="buttonGreenMenu">Comprar coins</button>-->
                     </div>
                 </td>
                 <td>
                     <div class="caixaDireitaMenu img_wrap">
                         <h4 class="p1">Perfil de Usuario</h4>
-                        <a><img src="img/user.png" width="280px" height="280px" class="image"></a>
-                        <p class="description">Acessar o perfil de usuário</p>
+                        <div id="aPerfilUser" class="image">
+                            <a><img src="img/user.png" width="270px" height="280px"></a>
+                            <p class="description">Acessar o perfil de usuário</p>
+                        </div>
                         <!--<button class="buttonGreenMenu">Acessar</button>-->
                     </div>
                 </td>
             </tr>
         </table>
+        <div id="divDesafios" hidden>
+            <div class="divLevels">
+                <button id="bVoltarDesafios">Voltar</button>
+                <div id="niveisDesafios">
+                    <h4 class="p1">Desafios</h4>
+                    <table>
+                        <tr>
+                            <td><button class="btn btn-success" id="bEasy">Nível Easy</button></td>
+                            <td><button class="btn btn-warning" id="bMedium">Nível Médio</button></td>
+                            <td><button class="btn btn-danger" id="bHard">Nível Hard</button></td>
+                        </tr>
+                    </table>
+                    <br>
+                    <table id="tEasy" hidden>
+                        <tr>
+                            <td><button>1</button></td>
+                            <td><button>2</button></td>
+                            <td><button>3</button></td>
+                            <td><button>4</button></td>
+                            <td><button>5</button></td>
+                        </tr>
+                        <tr>
+                            <td><button>6</button></td>
+                            <td><button>7</button></td>
+                            <td><button>8</button></td>
+                            <td><button>9</button></td>
+                            <td><button>10</button></td>
+                        </tr>
+                    </table>
+                    <br>
+                    <table id="tMedium" hidden>
+                        <tr>
+                            <td><button></button></td>
+                            <td><button></button></td>
+                            <td><button></button></td>
+                            <td><button></button></td>
+                            <td><button></button></td>
+                        </tr>
+                        <tr>
+                            <td><button></button></td>
+                            <td><button></button></td>
+                            <td><button></button></td>
+                            <td><button></button></td>
+                            <td><button></button></td>
+                        </tr>
+                    </table>
+                    <br>
+                    <table id="tHard" hidden>
+                        <tr>
+                            <td><button></button></td>
+                            <td><button></button></td>
+                            <td><button></button></td>
+                            <td><button></button></td>
+                            <td><button></button></td>
+                        </tr>
+                        <tr>
+                            <td><button></button></td>
+                            <td><button></button></td>
+                            <td><button></button></td>
+                            <td><button></button></td>
+                            <td><button></button></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
+<script type="text/javascript" src="js/functions/fn_homeOptions.js"></script>

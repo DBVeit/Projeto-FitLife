@@ -99,10 +99,6 @@
     opacity: 0.9;
 }
 
-.cardDesafio{
-    width: 280px;
-    float: left;
-}
 .image{
     border: solid transparent;
     position: relative;
@@ -125,6 +121,7 @@
     position: fixed;
     width: 280px;
     text-align: center;
+    color: black;
 }
 
 .img_wrap:hover .description{
@@ -134,4 +131,12 @@
 
 .img_wrap h4{
     text-align: center;
+}
+
+.cardsTable{
+    margin-top: 20px;
+}
+
+.divLevels{
+    padding: 30px;
 }
