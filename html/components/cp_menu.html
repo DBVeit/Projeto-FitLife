@@ -6,19 +6,16 @@
                     <div class="caixaEsquerdaMenu cardDesafio img_wrap">
                         <h4 class="p1">Desafios</h4>
                         <div id="aDesafios" class="image">
-                            <a><img src="img/desafio2.png" width="270px" height="280px"/></a>
+                            <a><img src="img/desafio2.png" width="270px" height="270px"/></a>
                             <p class="description">Acessar desafios diários</p>
                         </div>
-                        <!--<button class="buttonGreenLeftM">Nivel Easy</button>
-                        <button class="buttonGreenCenterM">Nivel Medium</button>
-                        <button class="buttonGreenRightM">Nivel Hard</button>-->
                     </div>
                 </td>
                 <td>
                     <div class="caixaMeioMenu cardLoja img_wrap">
                         <h4 class="p1">Loja</h4>
                         <div id="aLoja" class="image">
-                            <a><img src="img/loja.jpeg" width="270px" height="280px"></a>
+                            <a><img src="img/loja.jpeg" width="270px" height="270px"/></a>
                             <p class="description">Ir para a loja</p>
                         </div>
                         <!--<button class="buttonGreenMenu">Comprar coins</button>-->
@@ -28,7 +25,7 @@
                     <div class="caixaDireitaMenu img_wrap">
                         <h4 class="p1">Perfil de Usuario</h4>
                         <div id="aPerfilUser" class="image">
-                            <a><img src="img/user.png" width="270px" height="280px"></a>
+                            <a><img src="img/user.png" width="270px" height="270px"/></a>
                             <p class="description">Acessar o perfil de usuário</p>
                         </div>
                         <!--<button class="buttonGreenMenu">Acessar</button>-->
@@ -38,26 +35,24 @@
         </table>
         <div id="divDesafios" hidden>
             <div class="divLevels">
-                <button id="bVoltarDesafios">Voltar</button>
+                <button id="bVoltarDesafios" class="btn btn-dark">Voltar</button>
                 <div id="niveisDesafios">
-                    <h4 class="p1">Desafios</h4>
-                    <table>
+                    <h4 class="p1">Escolher Desafio</h4>
+                    <table align="center" cellpadding="10">
                         <tr>
-                            <td><button class="btn btn-success" id="bEasy">Nível Easy</button></td>
-                            <td><button class="btn btn-warning" id="bMedium">Nível Médio</button></td>
-                            <td><button class="btn btn-danger" id="bHard">Nível Hard</button></td>
+                            <td><button class="btn btn-success" id="bEasy">Nível Inicial</button></td>
+                            <td><button class="btn btn-warning" id="bMedium">Nível Intermediário</button></td>
+                            <td><button class="btn btn-danger" id="bHard">Nível Hardcore</button></td>
                         </tr>
                     </table>
                     <br>
-                    <table id="tEasy" hidden>
-                        <tr>
-                            <td><button>1</button></td>
-                            <td><button>2</button></td>
+                    <table align="center" cellpadding="10" id="tEasy" hidden>
+                        <tr id="desafiosEasy">
+                            <td><button class="btn btn-success">Flexões</button></td>
+                            <td><button class="btn btn-dark"><i class="fas fa-lock"></i></button></td>
                             <td><button>3</button></td>
                             <td><button>4</button></td>
                             <td><button>5</button></td>
-                        </tr>
-                        <tr>
                             <td><button>6</button></td>
                             <td><button>7</button></td>
                             <td><button>8</button></td>
@@ -65,8 +60,7 @@
                             <td><button>10</button></td>
                         </tr>
                     </table>
-                    <br>
-                    <table id="tMedium" hidden>
+                    <table align="center" cellpadding="10" id="tMedium" hidden>
                         <tr>
                             <td><button></button></td>
                             <td><button></button></td>
@@ -82,8 +76,7 @@
                             <td><button></button></td>
                         </tr>
                     </table>
-                    <br>
-                    <table id="tHard" hidden>
+                    <table align="center" cellpadding="10" id="tHard" hidden>
                         <tr>
                             <td><button></button></td>
                             <td><button></button></td>
@@ -97,6 +90,36 @@
                             <td><button></button></td>
                             <td><button></button></td>
                             <td><button></button></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div id="divLoja" hidden>
+            <div class="divLoja">
+                <button class="buttonVoltarLoja btn btn-dark" onclick="myFunction()">Voltar</button>
+                <div class="divOpcoesLoja">
+                    <h4 class="p1">Opções da Loja</h4>
+                    <table align="center" cellpadding="10">
+                        <tr>
+                            <td>
+                                <div class="caixaEsquerdaLoja">
+                                    <h4 class="p1">Comprar Receita</h4>
+                                    <img src="img/note.png" class="image" width="270px" height="270px"/>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="caixaMeioLoja">
+                                    <h4 class="p1">Comprar Vidas</h4>
+                                    <img src="img/heart.png" class="image" width="270px" height="270px"/>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="caixaDireitaLoja">
+                                    <h4 class="p1">Comprar mascote</h4>
+                                    <img src="img/mascote.png" class="image" width="270px" height="270px"/>
+                                </div>
+                            </td>
                         </tr>
                     </table>
                 </div>

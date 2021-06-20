@@ -4,10 +4,12 @@ $(document).ready(function (){
         $("#divDesafios").fadeIn(2000).removeAttr("hidden");
     });
     $("#aLoja").click(function (){
-
+        $("#menuOptions").fadeOut(1000).attr("hidden", true);
+        $("#divLoja").fadeIn(2000).removeAttr("hidden");
     });
     $("#aPerfilUser").click(function (){
-
+        $("#menuOptions").fadeOut(1000).attr("hidden", true);
+        $("#divPerfil").fadeIn(2000).removeAttr("hidden");
     });
     $("#bEasy").click(function (){
         $("#tEasy").removeAttr("hidden");
@@ -27,5 +29,9 @@ $(document).ready(function (){
     $("#bVoltarDesafios").click(function (){
         $("#divDesafios").fadeOut(1000).attr("hidden", true);
         $("#menuOptions").fadeIn(2000).removeAttr("hidden");
+    });
+    $(".buttonVoltarLoja").click(function (){
+       $("#divLoja").fadeOut(1000).attr("hidden", true);
+       $("#menuOptions").fadeIn(2000).removeAttr("hidden");
     });
 });

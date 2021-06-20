@@ -137,6 +137,10 @@
     margin-top: 20px;
 }
 
-.divLevels{
+.divLevels, .divLoja{
     padding: 30px;
+}
+
+#niveisDesafios, .divOpcoesLoja{
+    text-align: center;
 }
