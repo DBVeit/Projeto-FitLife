@@ -22,6 +22,7 @@ $results = mysqli_num_rows($result);
 if ($results == 1){
     $_SESSION['logado'] = true;
     $_SESSION['nome'] = $row['nome_completo'];
+    $_SESSION['email'] = $row['email'];
     //$retorno = array('codigo' => 1, 'msg' => 'Logado');
     //echo json_encode($retorno);
     header("Location: ../../../home.php");

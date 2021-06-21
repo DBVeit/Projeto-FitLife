@@ -1,4 +1,5 @@
 <div class="body">
+    <div id="eFlexoes"></div>
     <div class="boxes cards">
         <table class="cardsTable" align="center" cellpadding="20" id="menuOptions">
             <tr>
@@ -18,7 +19,6 @@
                             <a><img src="img/loja.jpeg" width="270px" height="270px"/></a>
                             <p class="description">Ir para a loja</p>
                         </div>
-                        <!--<button class="buttonGreenMenu">Comprar coins</button>-->
                     </div>
                 </td>
                 <td>
@@ -28,7 +28,6 @@
                             <a><img src="img/user.png" width="270px" height="270px"/></a>
                             <p class="description">Acessar o perfil de usuário</p>
                         </div>
-                        <!--<button class="buttonGreenMenu">Acessar</button>-->
                     </div>
                 </td>
             </tr>
@@ -48,48 +47,104 @@
                     <br>
                     <table align="center" cellpadding="10" id="tEasy" hidden>
                         <tr id="desafiosEasy">
-                            <td><button class="btn btn-success">Flexões</button></td>
-                            <td><button class="btn btn-dark"><i class="fas fa-lock"></i></button></td>
-                            <td><button>3</button></td>
-                            <td><button>4</button></td>
-                            <td><button>5</button></td>
-                            <td><button>6</button></td>
-                            <td><button>7</button></td>
-                            <td><button>8</button></td>
-                            <td><button>9</button></td>
-                            <td><button>10</button></td>
+                            <td>
+                                <button type="button" data-toggle="modal" data-target="#modal_eflexoes" id="bEFlexoes" class="btn btn-success">Flexões</button>
+                            </td>
+                            <td>
+                                <button id="bEAgachamentos" class="btn btn-success"><i class="fas fa-lock"></i></button>
+                            </td>
+                            <td>
+                                <button id="bEEstocadas" class="btn btn-success"><i class="fas fa-lock"></i></button>
+                            </td>
+                            <td>
+                                <button id="bEAbdominais" class="btn btn-success"><i class="fas fa-lock"></i></button>
+                            </td>
+                            <td>
+                                <button id="bE5" class="btn btn-success"><i class="fas fa-lock"></i></button>
+                            </td>
+                            <td>
+                                <button id="bE6" class="btn btn-success"><i class="fas fa-lock"></i></button>
+                            </td>
+                            <td>
+                                <button id="bE7" class="btn btn-success"><i class="fas fa-lock"></i></button>
+                            </td>
+                            <td>
+                                <button id="bE8" class="btn btn-success"><i class="fas fa-lock"></i></button>
+                            </td>
+                            <td>
+                                <button id="bE9" class="btn btn-success"><i class="fas fa-lock"></i></button>
+                            </td>
+                            <td>
+                                <button id="bE10" class="btn btn-success"><i class="fas fa-lock"></i></button>
+                            </td>
                         </tr>
                     </table>
                     <table align="center" cellpadding="10" id="tMedium" hidden>
-                        <tr>
-                            <td><button></button></td>
-                            <td><button></button></td>
-                            <td><button></button></td>
-                            <td><button></button></td>
-                            <td><button></button></td>
-                        </tr>
-                        <tr>
-                            <td><button></button></td>
-                            <td><button></button></td>
-                            <td><button></button></td>
-                            <td><button></button></td>
-                            <td><button></button></td>
+                        <tr id="desafiosMedium">
+                            <td>
+                                <button id="bM1" class="btn btn-warning"><i class="fas fa-lock"></i></button>
+                            </td>
+                            <td>
+                                <button id="bM2" class="btn btn-warning"><i class="fas fa-lock"></i></button>
+                            </td>
+                            <td>
+                                <button id="bM3" class="btn btn-warning"><i class="fas fa-lock"></i></button>
+                            </td>
+                            <td>
+                                <button id="bM4" class="btn btn-warning"><i class="fas fa-lock"></i></button>
+                            </td>
+                            <td>
+                                <button id="bM5" class="btn btn-warning"><i class="fas fa-lock"></i></button>
+                            </td>
+                            <td>
+                                <button id="bM6" class="btn btn-warning"><i class="fas fa-lock"></i></button>
+                            </td>
+                            <td>
+                                <button id="bM7" class="btn btn-warning"><i class="fas fa-lock"></i></button>
+                            </td>
+                            <td>
+                                <button id="bM8" class="btn btn-warning"><i class="fas fa-lock"></i></button>
+                            </td>
+                            <td>
+                                <button id="bM9" class="btn btn-warning"><i class="fas fa-lock"></i></button>
+                            </td>
+                            <td>
+                                <button id="bM10" class="btn btn-warning"><i class="fas fa-lock"></i></button>
+                            </td>
                         </tr>
                     </table>
                     <table align="center" cellpadding="10" id="tHard" hidden>
-                        <tr>
-                            <td><button></button></td>
-                            <td><button></button></td>
-                            <td><button></button></td>
-                            <td><button></button></td>
-                            <td><button></button></td>
-                        </tr>
-                        <tr>
-                            <td><button></button></td>
-                            <td><button></button></td>
-                            <td><button></button></td>
-                            <td><button></button></td>
-                            <td><button></button></td>
+                        <tr id="desafiosHard">
+                            <td>
+                                <button id="bH1" class="btn btn-danger"><i class="fas fa-lock"></i></button>
+                            </td>
+                            <td>
+                                <button id="bH2" class="btn btn-danger"><i class="fas fa-lock"></i></button>
+                            </td>
+                            <td>
+                                <button id="bH3" class="btn btn-danger"><i class="fas fa-lock"></i></button>
+                            </td>
+                            <td>
+                                <button id="bH4" class="btn btn-danger"><i class="fas fa-lock"></i></button>
+                            </td>
+                            <td>
+                                <button id="bH5" class="btn btn-danger"><i class="fas fa-lock"></i></button>
+                            </td>
+                            <td>
+                                <button id="bH6" class="btn btn-danger"><i class="fas fa-lock"></i></button>
+                            </td>
+                            <td>
+                                <button id="bH7" class="btn btn-danger"><i class="fas fa-lock"></i></button>
+                            </td>
+                            <td>
+                                <button id="bH8" class="btn btn-danger"><i class="fas fa-lock"></i></button>
+                            </td>
+                            <td>
+                                <button id="bH9" class="btn btn-danger"><i class="fas fa-lock"></i></button>
+                            </td>
+                            <td>
+                                <button id="bH10" class="btn btn-danger"><i class="fas fa-lock"></i></button>
+                            </td>
                         </tr>
                     </table>
                 </div>
@@ -103,21 +158,27 @@
                     <table align="center" cellpadding="10">
                         <tr>
                             <td>
-                                <div class="caixaEsquerdaLoja">
-                                    <h4 class="p1">Comprar Receita</h4>
-                                    <img src="img/note.png" class="image" width="270px" height="270px"/>
+                                <div class="img_wrap">
+                                    <div class="image caixaEsquerdaLoja">
+                                        <a><img src="img/recipes.png" width="270px" height="270px"/></a>
+                                        <p class="description">Comprar Receita</p>
+                                    </div>
                                 </div>
                             </td>
                             <td>
-                                <div class="caixaMeioLoja">
-                                    <h4 class="p1">Comprar Vidas</h4>
-                                    <img src="img/heart.png" class="image" width="270px" height="270px"/>
+                                <div class="img_wrap">
+                                    <div class="image caixaMeioLoja">
+                                        <a><img src="img/life.png" width="270px" height="270px"/></a>
+                                        <p class="description">Comprar Vidas</p>
+                                    </div>
                                 </div>
                             </td>
                             <td>
-                                <div class="caixaDireitaLoja">
-                                    <h4 class="p1">Comprar mascote</h4>
-                                    <img src="img/mascote.png" class="image" width="270px" height="270px"/>
+                                <div class="img_wrap">
+                                    <div class="image caixaDireitaLoja">
+                                        <a><img src="img/mascote.png" width="270px" height="270px"/></a>
+                                        <p class="description">Comprar mascote</p>
+                                    </div>
                                 </div>
                             </td>
                         </tr>

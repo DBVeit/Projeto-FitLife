@@ -1,3 +1,6 @@
+<?php
+include_once ("php/functions/session/fn_logged.php");
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -9,12 +12,17 @@
         <!--<link rel="stylesheet" href="css/style.css"/>-->
         <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
     </head>
-    <body class="homeBody">
+    <body class="homeBody" onload="relogio()">
         <nav class="navbar navbar-light bg-light">
             <span class="navbar-brand mb-0 h1 navSpan" id="fitLife"></span><!--Texto Logo Navbar-->
         </nav>
         <br>
-        <div class="container" style="margin-top: 50px;">
+        <div class="container" style="margin-top: 30px;">
+            <div style="float: right; color: white">
+                <a style="color: white" href="php/functions/session/fn_logout.php">Sair</a>
+            </div>
+            <p id="welcomeText" style="color: white">Bem vindo, <?php echo $_SESSION['nome'];?></p>
+            <input type="hidden" value="<?php echo $_SESSION['email'];?>" id="usuarioEmail"/>
             <div id="menu"></div>
             <div id="desafios"></div>
             <div id="menuLoja"></div>
@@ -25,4 +33,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/components/cp_home.js"></script>
     <script type="text/javascript" src="js/components/cp_load_menu.js"></script>
+    <script type="text/javascript" src="js/functions/fn_temporizador.js"></script>
+    <script type="text/javascript" src="js/ajax/ajax_desafios.js"></script>
 </html>

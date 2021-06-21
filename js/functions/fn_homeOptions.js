@@ -1,4 +1,5 @@
 $(document).ready(function (){
+    $("#eFlexoes").load("html/components/cp_descriptions/cp_description_eflexoes.html");
     $("#aDesafios").click(function (){
         $("#menuOptions").fadeOut(1000).attr("hidden", true);
         $("#divDesafios").fadeIn(2000).removeAttr("hidden");
