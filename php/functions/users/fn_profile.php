@@ -43,7 +43,8 @@ echo "
             </tr>
             <tr>
                 <td>
-                    <button id='bEditarPerfil' data-toggle='modal' data-target='#modal_profile' class='btn btn-primary'>Editar Perfil</button>
+                    <button id='bEditarPerfil' data-toggle='modal' data-target='#modal_profile' class='bEditarPerfil btn btn-primary'>Editar Perfil</button>
+                    <button id='bExcluirPerfil' data-toggle='modal' data-target='#modal_delete' class='btn btn-danger'>Excluir Perfil de Usuário</button>
                 </td>
             </tr>
         </table>

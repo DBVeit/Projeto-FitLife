@@ -8,26 +8,16 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
-        <table cellpadding="2">
-          <tr>
-            <td align="right">Nome: </td>
-            <td><input type="text" class="nomeUsuario form-control"/></td>
-          </tr>
-          <tr>
-            <td align="right">Senha: </td>
-            <td><input type="password" class="senhaUsuario form-control"/></td>
-          </tr>
-          <tr>
-            <td align="right">Confirmar Senha: </td>
-            <td><input type="password" class="confirmaSenha form-control"/></td>
-          </tr>
-        </table>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-        <button type="submit" class="btn btn-success" id="salvarPerfil">Salvar</button>
-      </div>
+      <form method="POST" action="php/functions/users/fn_updateUser.php">
+        <div class="modal-body">
+          <table cellpadding="2" id="dadosUsuario">
+          </table>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+          <button type="submit" class="btn btn-success" name="salvarPerfil" id="salvarPerfil">Salvar</button>
+        </div>
+      </form>
     </div>
   </div>
 </div>
