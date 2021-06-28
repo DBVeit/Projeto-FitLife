@@ -1,5 +1,6 @@
 $(document).ready(function (){
     $("#eFlexoes").load("html/components/cp_descriptions/cp_description_eflexoes.html");
+    $("#profile").load("html/components/cp_profile/cp_user_profile.html");
     $("#aDesafios").click(function (){
         $("#menuOptions").fadeOut(1000).attr("hidden", true);
         $("#divDesafios").fadeIn(2000).removeAttr("hidden");
@@ -34,5 +35,9 @@ $(document).ready(function (){
     $(".buttonVoltarLoja").click(function (){
        $("#divLoja").fadeOut(1000).attr("hidden", true);
        $("#menuOptions").fadeIn(2000).removeAttr("hidden");
+    });
+    $(".buttonVoltarPerfil").click(function () {
+        $("#divPerfil").fadeOut(1000).attr("hidden", true);
+        $("#menuOptions").fadeIn(2000).removeAttr("hidden");
     });
 });

@@ -137,16 +137,12 @@
     margin-top: 20px;
 }
 
-.divLevels, .divLoja{
+.divLevels, .divLoja, #divPerfil{
     padding: 30px;
 }
 
 #niveisDesafios, .divOpcoesLoja{
     text-align: center;
-}
-
-.statusDiv i{
-    color: #00ff2a;
 }
 
 #divErro{
@@ -179,4 +175,19 @@
 
 .retornarLink:hover{
     cursor: pointer;
+}
+
+#infosPerfil{
+    width: 100%;
+    margin-top: 50px;
+}
+
+#leftProfile{
+    float: left;
+    width: 40%;
+}
+
+#rightProfile{
+    float: left;
+    margin-top: -10px;
 }

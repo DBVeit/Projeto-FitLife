@@ -39,4 +39,5 @@ include_once ("php/functions/desafios/fn_verificar_desafios.php");
     <script type="text/javascript" src="js/components/cp_load_menu.js"></script>
     <script type="text/javascript" src="js/functions/fn_temporizador.js"></script>
     <script type="text/javascript" src="js/ajax/ajax_desafios.js"></script>
+    <script type="text/javascript" src="js/ajax/ajax_profile.js"></script>
 </html>
