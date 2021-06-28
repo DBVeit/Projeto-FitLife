@@ -1,5 +1,8 @@
 <?php
 include_once ("php/functions/session/fn_logged.php");
+include_once ("php/functions/database/conexao.php");
+include_once ("php/functions/session/fn_user_logged.php");
+include_once ("php/functions/desafios/fn_verificar_desafios.php");
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -19,10 +22,11 @@ include_once ("php/functions/session/fn_logged.php");
         <br>
         <div class="container" style="margin-top: 30px;">
             <div style="float: right; color: white">
-                <a style="color: white" href="php/functions/session/fn_logout.php">Sair</a>
+                <a title="Configurações"><i class="fas fa-cog"></i></a>
+                <a style="color: white; margin-left: 10px;" href="php/functions/session/fn_logout.php">Sair</a>
             </div>
-            <p id="welcomeText" style="color: white">Bem vindo, <?php echo $_SESSION['nome'];?></p>
-            <input type="hidden" value="<?php echo $_SESSION['email'];?>" id="usuarioEmail"/>
+            <p id="welcomeText" style="color: white">Bem vindo, <?php echo $nome;?></p>
+            <input type="hidden" value="<?php echo $emailLogado;?>" id="usuarioEmail"/>
             <div id="menu"></div>
             <div id="desafios"></div>
             <div id="menuLoja"></div>

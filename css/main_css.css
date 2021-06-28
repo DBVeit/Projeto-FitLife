@@ -144,3 +144,39 @@
 #niveisDesafios, .divOpcoesLoja{
     text-align: center;
 }
+
+.statusDiv i{
+    color: #00ff2a;
+}
+
+#divErro{
+    color: red;
+}
+
+#divSucesso{
+    color: #1CA212;
+}
+
+#usuarioCadastrado, #naoAutenticado{
+    text-align: center;
+    font-size: 16px;
+    border-radius: 3px;
+    background-color: #e3e3e3;
+    width: 290px;
+    padding: 7px;
+    margin-bottom: 10px;
+}
+
+.error{
+    text-align: center;
+    padding-top: 50px;
+}
+
+.erroId{
+    font-size: 150px;
+    opacity: 0.3;
+}
+
+.retornarLink:hover{
+    cursor: pointer;
+}

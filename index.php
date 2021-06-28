@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -14,6 +17,7 @@
         </nav>
         <br>
         <div class="container">
+            <div align="center"><?php include_once ("php/components/cp_session_msg.php");?></div>
             <div class="mainDiv">
                 <div class="textoDiv"></div><!--Texto-->
                 <div class="divisoriaDiv"></div><!--Divisao-->
@@ -24,6 +28,8 @@
         </div>
     </body>
     <script type="text/javascript" src="jquery/jquery.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/components/cp_index.js"></script>
+    <script type="text/javascript" src="js/ajax/ajax_cadastro.js"></script>
 </html>

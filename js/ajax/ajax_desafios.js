@@ -11,7 +11,11 @@ $(document).ready(function (){
            success: function(dataResult){
               let dt = JSON.parse(dataResult);
               if (dt.statusCode==200){
-                  alert("Desafio aceito! Realize a atividade em até 24h");
+                  $("#statusEFlexoes").html("<i class=\'fas fa-check-circle\'></i> Desafio aceito!");
+                  $("#aceitar_eflexoes").attr("disabled", true);
+              }else if (dt.statusCode==202){
+                  $("#statusEFlexoes").html("<i class=\'fas fa-check-circle\'></i> Desafio aceito!");
+                  $("#aceitar_eflexoes").attr("disabled", true);
               }
            }
        });
